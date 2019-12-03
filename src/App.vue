@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<transition  name="slide-fade" mode="out-in" appear>
+	<div id="app" style="height:100%">
+		
+		<nav-bar></nav-bar>
+		<div class="ur-main-container container">
+			<transition  name="slide-fade" mode="out-in" appear>
+				<router-view/>
+			</transition>
+		</div>
+		<Footer></Footer>
+	</div>
+	</transition>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from '@/pages/inc/nav-bar'
+import Footer from '@/pages/inc/footer'
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+	name: 'app',
+	components: {
+		NavBar,
+		Footer
+	},
+	data() {
+		return {
+		}
+	},
+	computed: {
+	},
+	methods:{
+	},
+	mounted() {
+		this.$store.dispatch('global/init/getRates').then(res => {
+      console.log(res)
+		}).catch(error => {
+      console.log(error)
+		})
+	},
+	created() {
+		//document.getElementById('fullscreenLoader').style.display = 'none'
+	}
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
