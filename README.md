@@ -15,7 +15,7 @@ npm install
 npm run serve
 ```
 
-### error 
+### Error 
 
 If you get error below
 ```
