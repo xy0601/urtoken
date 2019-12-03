@@ -141,7 +141,7 @@ export default {
 	'<strong style="font-size:30px">Jessie</strong> &nbsp; &nbsp; &nbsp;<small>jessie@gmail.com</small> &nbsp; &nbsp; <small>Shanghai</small>'+
 	'<br>'+
 	'<p> From Shanghai, graduated from East China University of Science and Technology, HR and phycologist. </p>'+
-	'<p>There are a lot of talented people working in blockchain industry. Uwallet welcomes more people of insight to join, to learn blockchain and realize value together, Those who enjoys challenge, please do not hesitate to join us! </p>'+
+	'<p>There are a lot of talented people working in blockchain industry. Urtoken welcomes more people of insight to join, to learn blockchain and realize value together, Those who enjoys challenge, please do not hesitate to join us! </p>'+
 	'</p>'+
 	' </div>'+
 
@@ -165,7 +165,7 @@ export default {
 	validSendAmount: "The amount to transfer shall be no less than 0 ", 
 	volumn: "Transaction volume", 
 	wallet: "Wallet", 
-	walletInfo: " The Ethereum network connection is via the infura/local node. Uwallet does not save any passwords or keys, nor does it send ", 
+	walletInfo: " The Ethereum network connection is via the infura/local node. Urtoken does not save any passwords or keys, nor does it send ", 
 	walletPwd: "Wallet password",
 	walletSubtitle: " When the wallet is locked, you can only check the balance, you may not able to transfer. Click 'Unlock' to enable the transfer.",
 	obj: {
