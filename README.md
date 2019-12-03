@@ -18,7 +18,8 @@ npm run serve
 ### error 
 
 If you get error:. 
-```More than one instance of bitcore-lib found. Please make sure to require bitcore-lib and check that submodules do not also include their own bitcore-lib dependency. 
+```
+More than one instance of bitcore-lib found. Please make sure to require bitcore-lib and check that submodules do not also include their own bitcore-lib dependency. 
 ```
 please enter node_modules and delete redundant bitcore-lib. 
 
