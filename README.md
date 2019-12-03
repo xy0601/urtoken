@@ -1,4 +1,4 @@
-# urtoken-wallet-new
+# urtoken
 
 ## Project setup
 ```
